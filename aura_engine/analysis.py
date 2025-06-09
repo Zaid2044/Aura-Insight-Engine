@@ -1,5 +1,3 @@
-# aura_engine/analysis.py
-
 from transformers import pipeline
 import pandas as pd
 
@@ -31,14 +29,12 @@ def analyze_sentiment(df: pd.DataFrame):
     
     sentiments = sentiment_pipeline(texts_to_analyze)
 
-    # Extract just the label (e.g., 'Positive') and the score from the results
     df['sentiment_label'] = [s['label'] for s in sentiments]
     df['sentiment_score'] = [s['score'] for s in sentiments]
 
     print("✅ Sentiment analysis complete.")
     return df
 
-# This block allows us to test this script directly
 if __name__ == '__main__':
     from .ingest import fetch_subreddit_posts
 

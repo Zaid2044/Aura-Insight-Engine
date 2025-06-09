@@ -1,5 +1,3 @@
-# aura_engine/ingest.py
-
 import os
 import praw
 import pandas as pd
@@ -66,9 +64,7 @@ def fetch_subreddit_posts(subreddit_name: str, limit: int = 25):
     print(f"✅ Fetched {len(df)} posts successfully.")
     return df
 
-# This block allows us to run this script directly for testing
 if __name__ == '__main__':
-    # Let's test by fetching posts from the 'apple' subreddit
     apple_posts_df = fetch_subreddit_posts('apple', limit=10)
     
     print("\n--- Latest 10 Post Titles from r/apple ---")
