@@ -1,7 +1,3 @@
-🔗 [Aura-Insight-Engine](https://github.com/Zaid2044/Aura-Insight-Engine)
-
----
-
 # Aura: Insight Engine
 
 **Author:** MOHAMMED ZAID AHMED  
